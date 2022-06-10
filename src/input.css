@@ -26,7 +26,7 @@
 }
 
 .card{
-    @apply border-[1px] border-primary font-apple pb-2 mr-[12px] flex-shrink-0;
+    @apply border-[1px] border-primary font-apple pb-2 flex-shrink-0;
     box-shadow: 0 4px 4px #171717;
     width: 150px;
     height: 200px;

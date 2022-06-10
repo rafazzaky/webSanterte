@@ -558,40 +558,6 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.container {
-  width: 100%;
-}
-
-@media (min-width: 640px) {
-  .container {
-    max-width: 640px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1320px) {
-  .container {
-    max-width: 1320px;
-  }
-}
-
 .top-0 {
   top: 0px;
 }
@@ -603,10 +569,6 @@ video {
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
-}
-
-.ml-\[42px\] {
-  margin-left: 42px;
 }
 
 .flex {
@@ -655,12 +617,14 @@ video {
   justify-content: center;
 }
 
-.overflow-x-auto {
-  overflow-x: auto;
+.space-x-\[12px\] > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(12px * var(--tw-space-x-reverse));
+  margin-left: calc(12px * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.overflow-x-scroll {
-  overflow-x: scroll;
+.overflow-x-auto {
+  overflow-x: auto;
 }
 
 .rounded-\[14px\] {
@@ -683,6 +647,10 @@ video {
 
 .p-2 {
   padding: 0.5rem;
+}
+
+.p-\[42px\] {
+  padding: 42px;
 }
 
 .py-\[12px\] {
@@ -784,7 +752,6 @@ video {
 }
 
 .card {
-  margin-right: 12px;
   flex-shrink: 0;
   border-width: 1px;
   --tw-border-opacity: 1;
@@ -812,12 +779,6 @@ video {
   font-size: 17px;
   --tw-text-opacity: 1;
   color: rgb(64 64 64 / var(--tw-text-opacity));
-}
-
-.hover\:scale-150:hover {
-  --tw-scale-x: 1.5;
-  --tw-scale-y: 1.5;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .hover\:scale-110:hover {
