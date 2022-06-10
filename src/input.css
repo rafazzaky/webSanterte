@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities; 
+
+@font-face {
+    font-family: "Canterburry";
+    src: url("../dist/fonts/canterbury.ttf");
+  }
+
+@font-face {
+    font-family: "Apple";
+    src: url("../dist/fonts/AppleGaramond.ttf");
+  }
+.landing{
+    background-image: url('../dist/img/landing.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: 150%;
+    min-height: calc(100vh - 60px);
+}
+.galshadow{
+    box-shadow: 0 -20px 20px 20px #171717
+}
+.gallery img{
+    @apply rounded-sm mb-[24px];
+}
+
+.card{
+    @apply border-[1px] border-primary font-apple pb-2 mr-[12px] flex-shrink-0;
+    box-shadow: 0 4px 4px #171717;
+    width: 150px;
+    height: 200px;
+    text-align: center;
+}
+.card img{
+    width: 140px;
+    height: 140px;
+}
+.card h1{
+    @apply text-[21px] text-primary;
+}
+.card p{
+    @apply text-[17px] text-light;
+}
