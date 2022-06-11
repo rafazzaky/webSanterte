@@ -26,18 +26,11 @@
 }
 
 .card{
-    @apply border-[1px] border-primary font-apple pb-2 flex-shrink-0;
-    box-shadow: 0 4px 4px #171717;
-    width: 150px;
-    height: 200px;
+    @apply border-[1px] border-primary shadow-[0_4px_4px_#171717] text-[21px] text-primary bg-white w-[150px] h-[200px] mx-[12px] font-apple pb-2 flex-shrink-0 md:flex-shrink md:w-[225px] md:h-[300px] md:mb-[24px] hover:shadow-[0_0_0_2px_#171717,0_0_0_4px_#FFFFFF,0_0_0_7px_#171717];
     text-align: center;
 }
 .card img{
-    width: 140px;
-    height: 140px;
-}
-.card h1{
-    @apply text-[21px] text-primary;
+    @apply w-[140px] h-[140px] md:w-[210px] md:h-[210px];
 }
 .card p{
     @apply text-[17px] text-light;
